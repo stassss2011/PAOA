@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/c++/PAOA/Lab2/main.cpp" "C:/c++/PAOA/Lab2/cmake-build-debug/CMakeFiles/Lab2.dir/main.cpp.obj"
+  "C:/c++/PAOA/Lab2/tool.cpp" "C:/c++/PAOA/Lab2/cmake-build-debug/CMakeFiles/Lab2.dir/tool.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

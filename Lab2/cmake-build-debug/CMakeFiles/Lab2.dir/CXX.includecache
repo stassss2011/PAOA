@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/c++/PAOA/Lab2/main.cpp
+tool.h
+C:/c++/PAOA/Lab2/tool.h
+
+C:/c++/PAOA/Lab2/tool.h
+cstdlib
+-
+vector
+-
+algorithm
+-
+iostream
+-
+iterator
+-
+array
+-
+

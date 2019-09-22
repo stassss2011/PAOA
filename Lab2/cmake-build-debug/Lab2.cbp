@@ -83,6 +83,12 @@
 		<Unit filename="C:/c++/PAOA/Lab2/main.cpp">
 			<Option target="Lab2"/>
 		</Unit>
+		<Unit filename="C:/c++/PAOA/Lab2/tool.cpp">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="C:/c++/PAOA/Lab2/tool.h">
+			<Option target="Lab2"/>
+		</Unit>
 		<Unit filename="C:/c++/PAOA/Lab2/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

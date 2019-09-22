@@ -10,12 +10,16 @@
 #include <algorithm>
 #include <iostream>
 #include <iterator>
-#include <array>
+#include <fstream>
+#include <chrono>
+#include <iomanip>
 
 void fill(std::vector<int> &, int, std::vector<std::string>);
 
 
-int selection_sort(std::vector<int> &, int*, int*);
+int selection_sort(std::vector<int> &, int *, int *);
+
+int shell_sort(std::vector<int> &, int *, int *);
 
 void print(std::vector<int> &);
 

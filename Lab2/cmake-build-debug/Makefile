@@ -149,6 +149,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles\Lab2.dir\build.make CMakeFiles/Lab2.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+tool.obj: tool.cpp.obj
+
+.PHONY : tool.obj
+
+# target to build an object file
+tool.cpp.obj:
+	$(MAKE) -f CMakeFiles\Lab2.dir\build.make CMakeFiles/Lab2.dir/tool.cpp.obj
+.PHONY : tool.cpp.obj
+
+tool.i: tool.cpp.i
+
+.PHONY : tool.i
+
+# target to preprocess a source file
+tool.cpp.i:
+	$(MAKE) -f CMakeFiles\Lab2.dir\build.make CMakeFiles/Lab2.dir/tool.cpp.i
+.PHONY : tool.cpp.i
+
+tool.s: tool.cpp.s
+
+.PHONY : tool.s
+
+# target to generate assembly for a file
+tool.cpp.s:
+	$(MAKE) -f CMakeFiles\Lab2.dir\build.make CMakeFiles/Lab2.dir/tool.cpp.s
+.PHONY : tool.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -161,6 +188,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... tool.obj
+	@echo ... tool.i
+	@echo ... tool.s
 .PHONY : help
 
 

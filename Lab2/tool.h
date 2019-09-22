@@ -5,14 +5,13 @@
 #ifndef LAB2_TOOL_H
 #define LAB2_TOOL_H
 
+#include <algorithm>
+#include <chrono>
 #include <cstdlib>
 #include <vector>
-#include <algorithm>
 #include <iostream>
-#include <iterator>
-#include <fstream>
-#include <chrono>
 #include <iomanip>
+#include <fstream>
 
 void fill(std::vector<int> &, int, std::vector<std::string>);
 

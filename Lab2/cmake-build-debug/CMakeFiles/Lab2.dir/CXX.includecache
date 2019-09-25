@@ -11,20 +11,18 @@ tool.h
 C:/c++/PAOA/Lab2/tool.h
 
 C:/c++/PAOA/Lab2/tool.h
+algorithm
+-
+chrono
+-
 cstdlib
 -
 vector
 -
-algorithm
--
 iostream
 -
-iterator
+iomanip
 -
 fstream
--
-chrono
--
-iomanip
 -
 

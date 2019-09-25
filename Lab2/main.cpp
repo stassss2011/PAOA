@@ -26,9 +26,10 @@ int main() {
                 if (type == 0 || type == 3 || type == 6 || type == 9)
                     print(arr);
                 arr.clear();
-                elapsed_time[type] = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
+                elapsed_time[type] = static_cast<double>(std::chrono::duration_cast<std::chrono::microseconds>(
+                        end - start).count()) / 1000;
                 std::cout << "Was sorted " << f_name[type] << "\ncopy - " << copy[type] << " compare - " << cmp[type]
-                          << " Time = " << elapsed_time[type] << " microseconds" << "\n\n";
+                          << " Time = " << elapsed_time[type] << " milliseconds" << "\n\n";
             }
             break;
         case 2:
@@ -42,9 +43,10 @@ int main() {
                 if (type == 0 || type == 3 || type == 6 || type == 9)
                     print(arr);
                 arr.clear();
-                elapsed_time[type] = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
+                elapsed_time[type] = static_cast<double>(std::chrono::duration_cast<std::chrono::microseconds>(
+                        end - start).count()) / 1000;
                 std::cout << "Was sorted " << f_name[type] << "\ncopy - " << copy[type] << " compare - " << cmp[type]
-                          << " Time = " << elapsed_time[type] << " microseconds" << "\n\n";
+                          << " Time = " << elapsed_time[type] << " milliseconds" << "\n\n";
             }
             break;
     }

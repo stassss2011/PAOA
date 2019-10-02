@@ -29,7 +29,8 @@ int main() {
                 elapsed_time[type] = static_cast<double>(std::chrono::duration_cast<std::chrono::microseconds>(
                         end - start).count()) / 1000;
                 std::cout << "Was sorted " << f_name[type] << "\ncopy - " << copy[type] << " compare - " << cmp[type]
-                          << " Time = " << elapsed_time[type] << " milliseconds" << "\n\n";
+                          << " Time = " << std::fixed << std::setprecision(7) << elapsed_time[type] << " milliseconds"
+                          << "\n\n";
             }
             break;
         case 2:
@@ -46,15 +47,16 @@ int main() {
                 elapsed_time[type] = static_cast<double>(std::chrono::duration_cast<std::chrono::microseconds>(
                         end - start).count()) / 1000;
                 std::cout << "Was sorted " << f_name[type] << "\ncopy - " << copy[type] << " compare - " << cmp[type]
-                          << " Time = " << elapsed_time[type] << " milliseconds" << "\n\n";
+                          << " Time = " << std::fixed << std::setprecision(7) << elapsed_time[type] << " milliseconds"
+                          << "\n\n";
             }
             break;
     }
     std::cout << std::setw(20) << "Array" << std::setw(10) << "Copy" << std::setw(10) << "Compare" << std::setw(10)
               << "Time" << std::endl;
     for (int i = 0; i < 12; ++i) {
-        std::cout << std::setw(20) << f_name[i] << std::setw(10) << copy[i] << std::setw(10) << cmp[i] << std::setw(10)
-                  << elapsed_time[i] << std::endl;
+        std::cout << std::setw(20) << f_name[i] << std::setw(10) << copy[i] << std::setw(10) << cmp[i] << std::setw(15)
+                  << std::fixed << std::setprecision(7) << elapsed_time[i] << std::endl;
     }
     system("pause");
     return 0;

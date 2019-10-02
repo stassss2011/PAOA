@@ -26,20 +26,18 @@ void print(std::vector<int> &arr) {
 int selection_sort(std::vector<int> &arr, int *copy, int *cmp) {
     int min_i;
     for (int i = 0; i < arr.size() - 1; ++i) {
-        (*cmp)++;
         min_i = i;
-        (*copy)++;
+        (*copy)+=3;
         for (int j = i + 1; j < arr.size(); ++j) {
-            (*cmp) += 2;
+            (*cmp) ++;
             if (arr.at(j) < arr.at(min_i)) {
                 min_i = j;
                 (*copy)++;
             }
         }
-        (*cmp)++;
         if (min_i != i) {
             std::swap(arr.at(i), arr.at(min_i));
-            (*copy)++;
+
         }
     }
 }

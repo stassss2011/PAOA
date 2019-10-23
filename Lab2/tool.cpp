@@ -21,15 +21,15 @@ void print(std::vector<int> &arr) {
     for (int i : arr)
         std::cout << i << ", ";
     std::cout << "\n\n";
-};
+}
 
 int selection_sort(std::vector<int> &arr, int *copy, int *cmp) {
     int min_i;
     for (int i = 0; i < arr.size() - 1; ++i) {
         min_i = i;
-        (*copy)+=3;
+        (*copy) += 3;
         for (int j = i + 1; j < arr.size(); ++j) {
-            (*cmp) ++;
+            (*cmp)++;
             if (arr.at(j) < arr.at(min_i)) {
                 min_i = j;
                 (*copy)++;
